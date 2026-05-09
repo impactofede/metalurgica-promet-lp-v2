@@ -41,31 +41,19 @@ export function ServicesB2B() {
   return (
     <section id="mayorista" className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 relative">
-        <div className="grid lg:grid-cols-12 gap-10 items-end mb-12 md:mb-16">
-          <div className="lg:col-span-7">
-            <span className="inline-block text-primary font-bold text-[11px] uppercase tracking-[0.2em] mb-3">
-              Para herreros y obras
-            </span>
-            <h2 className="font-display uppercase text-navy text-4xl md:text-6xl leading-[0.95]">
-              Mandá las medidas.
-              <br />
-              <span className="text-forge-gradient">En 3-4 días lo tenés.</span>
-            </h2>
-            <p className="mt-5 text-base md:text-lg max-w-2xl" style={{ color: "#3A3A3A" }}>
-              Corte, plegado y cilindrado con entrega en 3-4 días. Mandá tus medidas
-              por WhatsApp y te cotizamos hoy.
-            </p>
-          </div>
-
-          <div className="lg:col-span-5 rounded-lg overflow-hidden" style={{ aspectRatio: "4 / 3" }}>
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cilindrado-kboe1At1VN3N7FQNjezTvn9bpZX4vH.jpg"
-              alt="Cilindrado de chapa"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="mb-12 md:mb-16">
+          <span className="inline-block text-primary font-bold text-[11px] uppercase tracking-[0.2em] mb-3">
+            Para herreros y obras
+          </span>
+          <h2 className="font-display uppercase text-navy text-4xl md:text-6xl leading-[0.95] max-w-2xl">
+            Mandá las medidas.
+            <br />
+            <span className="text-forge-gradient">En 3-4 días lo tenés.</span>
+          </h2>
+          <p className="mt-5 text-base md:text-lg max-w-2xl" style={{ color: "#3A3A3A" }}>
+            Corte, plegado y cilindrado con entrega en 3-4 días. Mandá tus medidas
+            por WhatsApp y te cotizamos hoy.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
