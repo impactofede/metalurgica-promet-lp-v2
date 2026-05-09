@@ -39,9 +39,9 @@ export function HeroSplit() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-6 font-display uppercase text-white text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight"
           >
-            +60 años en La Plata.
+            60 años nos avalan,
             <br />
-            El trabajo habla solo.
+            <span className="text-primary">calidad comprobada</span>
           </motion.h1>
 
           <motion.p

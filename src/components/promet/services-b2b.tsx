@@ -16,7 +16,7 @@ const services = [
   {
     title: "Cilindrado",
     desc: "Cilindrado de chapa para tanques, ductos y piezas curvas. Ajustamos al diámetro que necesite tu obra.",
-    img: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=60&w=600",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cilindrado-kboe1At1VN3N7FQNjezTvn9bpZX4vH.jpg",
   },
   {
     title: "Soldadura MIG / TIG",
@@ -35,12 +35,7 @@ const services = [
   },
 ];
 
-const capacities = [
-  { label: "Espesor de corte", value: "hasta 12mm" },
-  { label: "Largo de plegado", value: "hasta 3 m" },
-  { label: "Materiales", value: "Acero, inox y galvanizado" },
-  { label: "Entrega en", value: "3-4 días" },
-];
+
 
 export function ServicesB2B() {
   return (
@@ -62,20 +57,14 @@ export function ServicesB2B() {
             </p>
           </div>
 
-          <div
-            className="lg:col-span-5 grid grid-cols-2 gap-3 p-5 corner-cut bg-light border"
-            style={{ borderColor: "rgba(30,45,107,0.10)" }}
-          >
-            {capacities.map((c) => (
-              <div key={c.label} className="border-l-2 border-primary pl-3">
-                <div className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
-                  {c.label}
-                </div>
-                <div className="font-display tabular text-navy text-xl mt-0.5 font-bold">
-                  {c.value}
-                </div>
-              </div>
-            ))}
+          <div className="lg:col-span-5 rounded-lg overflow-hidden" style={{ aspectRatio: "4 / 3" }}>
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cilindrado-kboe1At1VN3N7FQNjezTvn9bpZX4vH.jpg"
+              alt="Cilindrado de chapa"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
