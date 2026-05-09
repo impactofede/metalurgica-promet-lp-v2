@@ -123,9 +123,7 @@ export function Testimonials() {
           will-change: transform;
         }
 
-        .reviews-track:hover {
-          animation-duration: 70s;
-        }
+
 
         .review-card {
           width: 380px;
