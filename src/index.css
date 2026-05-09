@@ -1,8 +1,4 @@
-@import "tailwindcss" source(none);
-@source "../src";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
+@import "tailwindcss";
 
 /*
  * Promet — Brand palette extracted from logo.
@@ -82,30 +78,8 @@
   --steel-foreground: #ffffff;
   --forge: #f47920;
   --ember: #f47920;
-  --bone: #ffffff;        /* "bone" now == white */
-  --graphite: #1e2d6b;    /* "graphite" now == navy (dark sections) */
-}
-
-.dark {
-  --background: #ffffff;
-  --foreground: #1e2d6b;
-  --card: #ffffff;
-  --card-foreground: #1e2d6b;
-  --popover: #ffffff;
-  --popover-foreground: #1e2d6b;
-  --primary: #f47920;
-  --primary-foreground: #ffffff;
-  --secondary: #f5f7fa;
-  --secondary-foreground: #1e2d6b;
-  --muted: #f5f7fa;
-  --muted-foreground: #7a7a8a;
-  --accent: #f5f7fa;
-  --accent-foreground: #1e2d6b;
-  --destructive: #d92d20;
-  --destructive-foreground: #ffffff;
-  --border: rgba(30, 45, 107, 0.10);
-  --input: rgba(30, 45, 107, 0.15);
-  --ring: #f47920;
+  --bone: #ffffff;
+  --graphite: #1e2d6b;
 }
 
 @layer base {
