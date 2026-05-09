@@ -6,12 +6,12 @@ const services = [
   {
     title: "Corte de chapa",
     desc: "Chapa de 0,5 mm a 3,16 mm (chapa 25). Acero, inoxidable, aluminio y galvanizado. Piezas únicas o producción en serie.",
-    img: "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&q=60&w=600",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/corte%20chapa-d0pG4UNI5w8PEF0cBt461dPYXmlMcg.jpg",
   },
   {
     title: "Plegado",
     desc: "Encastre de perfilería para marcos, canaletas, bandejas y campanas. En cantidad y a medida. Calidad de plegado que se nota.",
-    img: "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=60&w=600",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/plegado-HBDRn23oPahWNQOzftdBJvdvdqlwHH.jpg",
   },
   {
     title: "Cilindrado",
@@ -21,17 +21,17 @@ const services = [
   {
     title: "Soldadura MIG / TIG",
     desc: "Soldadores con experiencia. Estructuras críticas, acero inoxidable y reparaciones.",
-    img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=60&w=600",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/soldadura-PniDrPLf38pDTPEN5x2crPYO8Zeu0Z.jpg",
   },
   {
     title: "Fabricación a plano",
     desc: "Tomamos tu plano, lo fabricamos y entregamos listo para montaje en obra.",
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=60&w=600",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/plano-BwpRsYi8sjAlzV1BPBFCezHV840M0f.jpg",
   },
   {
     title: "Racks y estanterías",
-    desc: "Baldas, racks tipo Nini y estantes para galpones y comercios. El trabajo con más margen y el que más se repite.",
-    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=60&w=600",
+    desc: "Baldas, racks tipo Nini y estantes para galpones y comercios. Solución ideal para organizar tu depósito.",
+    img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/racks-3dOD0PzOtaUYKUarMRzDLgtaQEJVig.jpg",
   },
 ];
 

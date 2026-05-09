@@ -5,7 +5,7 @@ import { TrustBand } from './components/promet/trust-band'
 import { Clients } from './components/promet/clients'
 import { ServicesB2C } from './components/promet/services-b2c'
 import { ServicesB2B } from './components/promet/services-b2b'
-import { Gallery } from './components/promet/gallery'
+
 import { Process } from './components/promet/process'
 import { Guarantee } from './components/promet/guarantee'
 import { Testimonials } from './components/promet/testimonials'
@@ -24,7 +24,6 @@ function App() {
         <Clients />
         <ServicesB2C />
         <ServicesB2B />
-        <Gallery />
         <Process />
         <Guarantee />
         <Testimonials />

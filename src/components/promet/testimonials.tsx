@@ -46,6 +46,9 @@ function GoogleG({ size = 14 }: { size?: number }) {
 }
 
 export function Testimonials() {
+  // Duplicate reviews for seamless loop
+  const duplicatedReviews = [...reviews, ...reviews];
+
   return (
     <section className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4">
@@ -79,32 +82,78 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
-          {reviews.map((r) => (
-            <ReviewCard key={r.name} review={r} />
-          ))}
+        {/* Infinite scroll wrapper */}
+        <div className="reviews-wrapper">
+          <div className="reviews-track">
+            {duplicatedReviews.map((r, i) => (
+              <ReviewCard key={`${r.name}-${i}`} review={r} />
+            ))}
+          </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes scroll-reviews {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+
+        .reviews-wrapper {
+          overflow: hidden;
+          mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 8%,
+            black 92%,
+            transparent 100%
+          );
+          -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 8%,
+            black 92%,
+            transparent 100%
+          );
+        }
+
+        .reviews-track {
+          display: flex;
+          width: max-content;
+          animation: scroll-reviews 30s linear infinite;
+          will-change: transform;
+        }
+
+        .reviews-track:hover {
+          animation-duration: 70s;
+        }
+
+        .review-card {
+          width: 380px;
+          flex-shrink: 0;
+          margin: 0 12px;
+          background: #FFFFFF;
+          border: 1px solid rgba(30,45,107,0.08);
+          border-top: 3px solid #F47920;
+          border-radius: 10px;
+          padding: 28px 24px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+          display: flex;
+          flex-direction: column;
+        }
+
+        @media (max-width: 640px) {
+          .review-card {
+            width: 300px;
+          }
+        }
+      `}</style>
     </section>
   );
 }
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <div
-      className="review-card"
-      style={{
-        background: "#FFFFFF",
-        border: "1px solid rgba(30,45,107,0.08)",
-        borderTop: "3px solid #F47920",
-        borderRadius: 10,
-        padding: "28px 24px",
-        boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
-        transition: "all 0.25s ease",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
+    <div className="review-card">
       <div className="flex items-center gap-3">
         <div
           className="grid place-items-center rounded-full shrink-0"
@@ -151,13 +200,6 @@ function ReviewCard({ review }: { review: Review }) {
           Reseña de Google
         </span>
       </div>
-
-      <style>{`
-        .review-card:hover {
-          box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-          transform: translateY(-2px);
-        }
-      `}</style>
     </div>
   );
 }
