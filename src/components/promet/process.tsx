@@ -5,7 +5,7 @@ const stepsB2C = [
   { icon: MessageCircle, t: "Contanos", d: "Por WhatsApp o formulario. Mandás fotos del lugar." },
   { icon: FileText, t: "Medimos sin cargo", d: "Vamos a tu casa, medimos y armamos presupuesto cerrado." },
   { icon: Wrench, t: "Fabricamos", d: "Producción en taller propio en Calle 43, La Plata." },
-  { icon: Truck, t: "Instalamos", d: "Si algo no queda como acordamos, se arregla. Siempre fue así." },
+  { icon: Truck, t: "Instalamos", d: "Si algo no queda como acordamos, se arregla." },
 ];
 
 const stepsB2B = [
